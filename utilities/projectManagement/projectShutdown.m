@@ -1,21 +1,8 @@
-%% PROJECT SHUTDOWN Tear down environment
-%   The projectShutdown script is designed to run on Project Close to clean
-%   up (remove) the local customisations made to the MATLAB Interactive
-%   Development Environment (IDE).  
+%% Project Shutdown
 %
-%   FUNCTION INPUTS
-%       None
 %
-%   FUNCTION OUTPUTS
-%       None
 %
-%   OTHER OUTPUTS
-%       None
-%
-%   LINKS
-%   For further information check out: <a href="matlab:web('https://github.com/cavediverchris/Project-Template-for-Apps/tree/standardise-file-documentation#projectmanagtement---projectshutdown')">Git documentation</a>.
-%
-%% CLEAN_UP_PROJECT
+%% Environment Teardown Processes
 % Clear up workspace for dialog message
 clc;
 
@@ -29,4 +16,3 @@ disp('Closed data dictionary(s)');
 % Reset the location where generated code and other temporary files are
 % created (slprj) to the default:
 Simulink.fileGenControl('reset');
-disp('Reverted default paths for code generation');
