@@ -14,22 +14,5 @@ To start using this template to support your workflow, you first need to initial
 
   1. Start MATLAB
   2. On the Home Tab across the top of the screen, click "New", then choose "Project", then choose "From Simulink Template"
-  3. From the window that appears, choose "Blank Project"
+  3. From the window that appears, you will see a collection of templates, choose the appropriate one and click "Create Project"
   4. In the pop-up window that appears, give your project a name (also update the Project Folder path with the name), and click "Create Project"
-  5. Download this repository by clicking on the "Clone or Download" button then choose the option to "Download ZIP". Wait while the files are downloaded. 
-  6. Extract the files from the compressed ZIP file in your downloads
-  7. Copy the contents (excluded the high-level folder which contains all of the files) into the directory where you created your new project.
-  8. Within Simulink Project, change your view to "All Files View".
-  9. Highlight all of the files, right-click, and choose "Add to the project path (including child files)"
-  10. Switch back to the "Project Files View".
-
-The files are now included in Simulink Project for management (and adding to source-control). However there are some utility functions that need some more setup.
-
-   1. Open the SLProjectFunctions folder
-   2. Highlight "A_ProjectSetup.m", "B_ProjectCleanUp.m", "C_NewSubSystem.m", "D_InformReviewersAboutModels.m" and "E_ConfigurationSetup.m"
-   3. Right-click and choose "Add Shortcut to ... General"
-   4. Choose the Shortcut Manager node on the left hand side
-   5. For "A_ProjectSetup", "D_InformReviewersAboutModels" and "E_ConfigurationSetup", right-click, choose Set Shortcut Action and choose Startup.
-   6. For "B_ProjectCleanUp" use the same process, but choose Shutdown
-  
- Close Simulink Project and re-open to ensure all utility functions are now called.
