@@ -1,1 +1,2 @@
-# MATLAB-template-for-app-development
+# Data
+The purpose of the data folder is to contain any configuration data that is required for the project to operate. It is not recommended that you store test data in your source control repository - it should be stored seperately, probably in a database, but if you don't have access to a database you could store it in here.
