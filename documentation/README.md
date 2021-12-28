@@ -1,1 +1,2 @@
-# MATLAB-template-for-app-development
+# Documentation
+This documentation folder contains key project-level documentation. Typically this will contain files (MATLAB Live Scripts) that describe the project folder structure, the purpose of each folder and the rationale for its use.
