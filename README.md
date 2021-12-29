@@ -1,8 +1,8 @@
 # Table of Contents
 
-1. Introduction (#introduction)
-2. Why MATLAB Projects (#why-matlab-projects)
-3. How to use this template (#how-to-use)
+1. [Introduction] (#introduction)
+2. [Why MATLAB Projects] (#why-matlab-projects)
+3. [How to use this template] (#how-to-use)
 
 # Introduction <a name="introduction"></a>
 This repository contains the template files to set up a MATLAB Project for the purposes of building MATLAB Apps or Toolboxes (including blocksets). This template is one of a collection of templates, the purpose of each is described below:
