@@ -19,7 +19,7 @@ close all
 projObj = currentProject;
 
 % Create the location of slprj to be the "work" folder of the current project:
-myCacheFolder = fullfile(projObj.RootFolder, 'SimulinkCacheFolder');
+myCacheFolder = fullfile(projObj.RootFolder, 'simulinkCacheFolder');
 
 % Check if the project settings have the work folder set
 
@@ -35,10 +35,10 @@ else
         % CASE: The cache folder doesn't already exist
         % ACTION: Create it and also add it to the project.
         mkdir(myCacheFolder)
-        addFolderIncludingChildFiles(projObj, myCacheFolder);
-%        addPath(projObj, myCacheFolder); % CAN'T ADD TO PATH DURING PROJECT START UP
+        
     end
-    
+    addFile(projObj, myCacheFolder);
+%        addPath(projObj, myCacheFolder); % CAN'T ADD TO PATH DURING PROJECT START UP
     projObj.SimulinkCacheFolder = myCacheFolder;
     
 end
@@ -46,7 +46,7 @@ end
 % Create the location for any files generated during build for code
 % generation.
 % Create the location of slprj to be the "work" folder of the current project:
-myCodeGenFolder = fullfile(projObj.RootFolder, 'CodeGen');
+myCodeGenFolder = fullfile(projObj.RootFolder, 'simulinkCodeGen');
 
 % Check if the project settings have the work folder set
 
@@ -62,10 +62,11 @@ else
         % CASE: The cache folder doesn't already exist
         % ACTION: Create it and also add it to the project.
         mkdir(myCodeGenFolder)
-        addFolderIncludingChildFiles(projObj, myCodeGenFolder);
-%        addPath(projObj, myCodeGenFolder); % CAN'T ADD TO PATH DURING PROJECT START UP
+
     end
     
+    addFile(projObj, myCodeGenFolder);
+%        addPath(projObj, myCodeGenFolder); % CAN'T ADD TO PATH DURING PROJECT START UP
     projObj.SimulinkCodeGenFolder = myCodeGenFolder;
     
 end
