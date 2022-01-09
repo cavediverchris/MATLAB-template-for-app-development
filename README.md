@@ -1,3 +1,7 @@
+# CI / CD Status
+
+[![Run MATLAB Tests on GitHub-Hosted Runner](https://github.com/cavediverchris/MATLAB-template-for-app-development/actions/workflows/runMatlabTests.yml/badge.svg?branch=main)](https://github.com/cavediverchris/MATLAB-template-for-app-development/actions/workflows/runMatlabTests.yml)
+
 # Table of Contents
 
 1. [Introduction](#introduction)
@@ -28,3 +32,7 @@ To start using this template to support your workflow, you first need to initial
   2. On the Home Tab across the top of the screen, click "New", then choose "Project", then choose "From Simulink Template"
   3. From the window that appears, you will see a collection of templates, choose the appropriate one and click "Create Project"
   4. In the pop-up window that appears, give your project a name (also update the Project Folder path with the name), and click "Create Project"
+
+# Compatibility  <a name="compatibility"></a>
+
+This has been built using MATLAB R2021A and it is not directly backward compatible with previous versions of MATLAB.
