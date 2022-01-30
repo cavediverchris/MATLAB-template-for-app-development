@@ -111,7 +111,7 @@ else
     
     installedTbxes = struct2table(installedTbxes);
 
-    isManagerInstalled = contains(installedTbxes.Name, "Manager");
+    isManagerInstalled = contains(installedTbxes.Name, "Manager for MATLAB Projects");
 end
 
 % Run Back Up
@@ -119,8 +119,8 @@ end
 if isManagerInstalled && runBackUp
     % Print message to screen.
     disp('Running backup');
-    backupDirectory = "C:\";
-    backup(backupDirectory)
+    [backupDirectory, ~, ~] = fileparts(pwd);
+    backup(string(backupDirectory))
 end
 
 % Clean up
