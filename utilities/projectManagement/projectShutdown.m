@@ -1,6 +1,7 @@
 %% Project Shutdown
-%
-%
+%   The projectShutdown script is designed to run on Project Close to clean
+%   up (remove) the local customisations made to the MATLAB Interactive
+%   Development Environment (IDE).  
 %
 %% Environment Teardown Processes
 % Clear up workspace for dialog message
